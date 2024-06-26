@@ -74,7 +74,7 @@ base.metadata.create_all(db)
 #     print(album.AlbumId, album.Title, album.ArtistId, sep=" | ")
 
 # Query 6 - select all tracks where the composer is "Queen" from the "Track" table
-tracks = session.query(Track).filter_by(Composer="Queen")
+tracks = session.query(Track).filter_by(Composer="Queen") #Not working
 for track in tracks:
     print(
         track.TrackId,
